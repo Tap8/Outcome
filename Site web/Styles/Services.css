@@ -1,0 +1,208 @@
+/*Passer outre les attributs mis en place dans style.css*/
+header {
+    margin-bottom: 100px;
+}
+
+header::before {
+    top: -10px;
+}
+
+/*.services-section:
+Affichage flex
+aligner le texte à droite
+aligner les items au centre
+marges intérieurs
+couleur de la police
+Ombre de la boite et une transition*/
+.nos-services-section {
+    display: flex;
+    flex-direction: column;
+    color: var(--darkaccent);
+    background-image: url(../Images/Passion-led-us-here.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px -10px 60px 30px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+}
+
+
+.nos-services-section .container {
+    color: var(--lightestgrey);
+    height: 500px;
+    padding-left: 100px;
+}
+
+.nos-services-section .text {
+    text-align: left;
+    margin: 100px auto 20px 0;
+    max-width: 400px;
+}
+
+
+
+/*|| ALL SERVICES_______________________________________________________________________________________*/
+
+.all-services-num {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin: 20px 50px 30px auto;
+}
+
+.all-services-num .container {
+    display: flex;
+    flex-direction: column;
+    color: var(--darkaccent);
+    margin-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+
+.all-services-num .container .text {
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.all-services-num table {
+    width: fit-content;
+    margin-left: 0;
+}
+
+.all-services-num table td:nth-child(1) {
+    padding-right: 10px;
+}
+
+
+/*|| IMAGES__________________________________________________________________________*/
+
+
+.img-container {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 90vw;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-service1 {
+    background-image: url(../Images/creating.jpg);
+}
+
+#img-service2 {
+    background-image: url(../Images/conception.jpg);
+}
+
+#img-service3 {
+    background-image: url(../Images/hosting.jpg);
+}
+
+#img-service4 {
+    background-image: url(../Images/managing.jpg);
+}
+
+
+@media (max-width: 750px) {
+
+    .nos-services-section .container {
+        padding-left: 50px;
+    }
+
+    /*|| ALL SERVICES_______________________________________________________________________________________*/
+
+    .all-services-num {
+        display: block;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+
+    .all-services-num .container {
+        display: flex;
+        flex-direction: column;
+        color: var(--darkaccent);
+        margin-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    .all-services-num .container .text {
+        text-align: center;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 10px;
+    }
+
+    .all-services-num table {
+        width: fit-content;
+        margin: 0 auto 20px auto;
+    }
+
+    .all-services-num table td:nth-child(1) {
+        padding-right: 10px;
+    }
+
+    /*|| SERVICES #2 & #3 changement d'alignement, de la marge intérieur et extérieur*/
+
+    #service2 .container .text,
+    #service3 .container .text {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    #service2 table,
+    #service3 table {
+        width: fit-content;
+        margin-left: 0;
+    }
+
+    #service2 .container,
+    #service3 .container {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    /*|| IMAGES__________________________________________________________________________*/
+
+
+    .img-container {
+        display: block;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 90vw;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #img-service1 {
+        background-image: url(../Images/creating.jpg);
+    }
+
+    #img-service2 {
+        background-image: url(../Images/conception.jpg);
+        width: 80vw;
+        margin-left: auto;
+    }
+
+    #img-service3 {
+        background-image: url(../Images/hosting.jpg);
+        width: 80vw;
+        margin-left: auto;
+    }
+
+    #img-service4 {
+        background-image: url(../Images/managing.jpg);
+    }
+}
