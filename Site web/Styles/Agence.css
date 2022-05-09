@@ -1,0 +1,28 @@
+/*Importation pour la section agence dans Acceuil.css*/
+@import url(Acceuil.css);
+
+/*Passer outre l'ombre de .agence-section dans acceuil.css*/
+.agence-section {
+    box-shadow: 0 0 0px 0px transparent;
+}
+
+.situated {
+    margin: 50px 10vw 50px 10vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.situated h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.situated p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+
+}

@@ -1,0 +1,59 @@
+footer {
+    position: fixed;
+    bottom: -1px;
+    right: 0;
+    left: 0;
+}
+
+@media (max-height: 710px) {
+    footer {
+        position: relative;
+    }
+}
+
+.create-account {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-account table td {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.create-accountm .text {
+    margin: 50px 10vw 60px 10vw;
+}
+
+.create-account .titres {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+::placeholder {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    padding-left: 3px;
+}
+
+.create-account input {
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--accent);
+}
+
+.create-account table #submit-td {
+    text-align: right;
+    margin-right: 2px;
+}
+
+.create-account table #reset-td {
+    text-align: left;
+    margin-left: 2px;
+}
